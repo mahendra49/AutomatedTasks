@@ -14,7 +14,7 @@ alist=asoup.select('.r a') #select all the links
 #I'm selecting only the first link
 areq=requests.get('http://google.com'+alist[0].get('href')) 
 asoup=bs4.BeautifulSoup(areq.text)
-aAmountlist=asoup.select('#priceblock_dealprice')
+aAmountlist=asoup.select('#priceblock_ourprice')
 a=False
 f=False
 #price on amazon is:
